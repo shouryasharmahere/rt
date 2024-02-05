@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_DATABASE: rt
+      MYSQL_USER: rt_admin
+      MYSQL_PASSWORD: rt_admin_pass
+      MYSQL_ROOT_PASSWORD: rt_root_pass
+    volumes:
+      - mysql_data:/var/lib/mysql
+volumes:
+  mysql_data:
