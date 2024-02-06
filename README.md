@@ -1,1 +1,1 @@
-Basic Django nm
+Basic Django nm..
